@@ -17,18 +17,12 @@ This pipeline normalizes all sources to the same OCSF field names, reducing thre
 
 ## Architecture
 
-```
-Raw Logs (Sysmon JSON / CloudTrail JSON)
-        │
-        ▼
-  Source Detection
-        │
-        ▼
-  Source Normalizer ──► OCSF Event
-  (extensible registry)
-        │
-        ▼
-  Normalized Output (JSON)
+``` mermaid
+flowchart LR
+  A["Raw Logs (Sysmon JSON / CloudTrail JSON)"] --> B["Source Detection"]
+  B --> C["Source Normalizer\n(extensible registry)"]
+  C --> D["OCSF Event"]
+  C --> E["Normalized Output (JSON)"]
 ```
 
 **Adding a new log source** requires only:
