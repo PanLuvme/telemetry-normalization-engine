@@ -1,0 +1,37 @@
+[
+  {
+    "EventID": 1,
+    "EventData": {
+      "UtcTime": "2025-11-01T14:23:01.000Z",
+      "User": "DESKTOP-ABC\\john",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "ProcessId": "4812",
+      "CommandLine": "cmd.exe /c whoami",
+      "ParentImage": "C:\\Windows\\explorer.exe",
+      "MD5": "a72c9b1d4e38c3f8e87e6d1a5f2b9c30",
+      "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "System": {
+      "Computer": "DESKTOP-ABC",
+      "Version": "13.40"
+    }
+  },
+  {
+    "EventID": 3,
+    "EventData": {
+      "UtcTime": "2025-11-01T14:23:05.000Z",
+      "User": "DESKTOP-ABC\\john",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "ProcessId": "4812",
+      "SourceIp": "192.168.1.100",
+      "SourcePort": "49823",
+      "DestinationIp": "93.184.216.34",
+      "DestinationPort": "443",
+      "DestinationHostname": "example.com"
+    },
+    "System": {
+      "Computer": "DESKTOP-ABC",
+      "Version": "13.40"
+    }
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.09",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIOSFODNN7EXAMPLE",
+        "arn": "arn:aws:iam::123456789012:user/Alice",
+        "accountId": "123456789012",
+        "userName": "Alice"
+      },
+      "eventTime": "2025-11-01T20:30:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "aws-cli/2.13.0",
+      "requestParameters": {
+        "bucketName": "mission-telemetry-data",
+        "key": "nav/lucy-2025-11-01.log"
+      },
+      "responseElements": null,
+      "requestID": "EXAMPLE123456789",
+      "eventID": "EXAMPLEEVENTID001",
+      "readOnly": true,
+      "eventType": "AwsApiCall"
+    },
+    {
+      "eventVersion": "1.09",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAIOSFODNN7EXAMPLE",
+        "arn": "arn:aws:iam::123456789012:user/Bob",
+        "accountId": "123456789012",
+        "userName": "Bob"
+      },
+      "eventTime": "2025-11-01T21:05:12Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "198.51.100.77",
+      "userAgent": "aws-sdk-python/1.34.0",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform sts:AssumeRole",
+      "requestParameters": {
+        "roleArn": "arn:aws:iam::123456789012:role/AdminRole"
+      },
+      "responseElements": null,
+      "requestID": "EXAMPLE987654321",
+      "eventID": "EXAMPLEEVENTID002",
+      "readOnly": false,
+      "eventType": "AwsApiCall"
+    }
+  ]
+}
